@@ -1,0 +1,14 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #e3eaf1;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.footer .title {
+  color: #100f0f;
+  font-size: 20px;
+}

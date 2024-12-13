@@ -1,0 +1,46 @@
+.navigator {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  background-color: #34b585;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  margin-right: 15px;
+  margin-left: 30px;
+}
+
+.menu li:hover {
+  border-bottom: #ffd103 2px solid;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover {
+  color: #ffd103;
+}
+
+.activate {
+  border-bottom: #ffd103 2px solid;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.navigatorHead {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 17px;
+}

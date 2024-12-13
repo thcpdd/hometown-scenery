@@ -1,13 +1,26 @@
+import { AntdRegistry } from '@ant-design/nextjs-registry';
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import "@/styles/global.css"
+
+
 export const metadata = {
-  title: '我的家乡景色'
+  title: '我的家乡景色',
+  icons: {
+    icon: '/icon.png'
+  }
 }
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
     <html lang="zh-Hans">
       <body>
-        <main>{children}</main>
+        <Header/>
+        <AntdRegistry><main>{children}</main></AntdRegistry>
+        <Footer/>
       </body>
     </html>
   );
 }
+
+export default RootLayout
