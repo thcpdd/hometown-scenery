@@ -16,7 +16,9 @@ const RootLayout = ({ children }) => {
     <html lang="zh-Hans">
       <body>
         <Header/>
-        <AntdRegistry><main>{children}</main></AntdRegistry>
+        <AntdRegistry>
+          <main className="main-content">{children}</main>
+        </AntdRegistry>
         <Footer/>
       </body>
     </html>

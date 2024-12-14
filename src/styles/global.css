@@ -1,9 +1,26 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: aliceblue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 ul, ol {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 去掉图片底部的间隔 */
+img {
+  vertical-align: bottom;
+}
+
+.main-content {
+  margin-bottom: 20px;
 }
