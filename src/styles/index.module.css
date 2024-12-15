@@ -14,7 +14,6 @@
   width: 100%;
   color: white;
   background: linear-gradient(to right, #5bd990, #42c946);
-  margin-bottom: 10px;
 }
 
 .descriptionBoxTitle {
@@ -42,16 +41,16 @@
 }
 /* 描述盒——结束 */
 
-/* 走进桂林——开始 */
-.understand {
+/* 桂林印象——开始 */
+.impression {
   margin-bottom: 15px;
 }
 
-.understandDetail {
+.impressionDetail {
   display: flex;
 }
 
-.understandDetailList {
+.impressionDetailList {
   background-color: #333;
   color: white;
   width: 10%;
@@ -59,38 +58,51 @@
   min-width: max-content;
 }
 
-.understandDetailList li {
+.impressionDetailList li {
   list-style: none;
 }
 
-.understandDetailList a {
+.impressionDetailList a {
   color: white;
 }
 
-.understandDetailList div {
+.impressionDetailList div {
   font-size: 17px;
   padding: 25px 0;
   border-bottom: #777777 1px solid;
 }
 
-.understandDetailList div:hover {
+.impressionDetailList div:hover {
   background-color: #f8f9fa;
   color: #333;
 }
 
-.understandDetailCarousel {
+.impressionDetailCarousel {
   height: 293px;
   width: 50%;
 }
 
-.understandDetailPhotosSet {
+.impressionDetailPhotosSet {
   width: 40%;
 }
-/* 走进桂林——结束 */
+/* 桂林印象——结束 */
 
 /* 桂林简介——开始 */
 .introduce {
   margin-bottom: 15px;
+}
+
+.introduceDetail {
+  background-color: white;
+  padding: 20px 25px 5px 25px;
+}
+
+.introduceThreeTreasures {
+  color: #1677ff;
+}
+
+.introduceThreeTreasures:hover {
+  cursor: pointer;
 }
 /* 桂林简介——结束 */
 
@@ -98,10 +110,29 @@
 .history {
   margin-bottom: 15px;
 }
+
+.historyDetail {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.historyDescription {
+  background-color: #fafafa;
+  border: 1px dashed;
+  border-radius: 10px;
+  padding: 15px 15px 0 15px;
+}
 /* 桂林简介——结束 */
 
 /* 著名景点——开始 */
 .sceneries {
   margin-bottom: 15px;
+}
+
+.sceneriesDetail {
+ background-color: white;
+  padding: 0 20px 20px 20px;
 }
 /* 著名景点——结束 */

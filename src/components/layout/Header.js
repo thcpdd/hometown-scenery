@@ -58,8 +58,8 @@ const Navigator = () => {
 // 头部组件
 export const Header = () => {
   return (
-      <div>
+      <header>
         <Navigator/>
-      </div>
+      </header>
   )
 }
