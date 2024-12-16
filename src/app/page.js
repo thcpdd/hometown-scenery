@@ -6,6 +6,7 @@ import { Image, Typography, Steps, Tooltip, Tabs } from "antd";
 import Paragraph from "antd/es/typography/Paragraph";
 import styles from "@/styles/index.module.css"
 import ImageCarousel from "@/components/ImageCarousel";
+import ImageFrame from "@/components/ImageFrame";
 
 
 const DescriptionBox = ({title, slogan}) => {
@@ -94,9 +95,9 @@ const IntroduceContent = () => {
   );
 }
 
-const createHistoryContent = (historyContents, index) => {
+const createHistoryContent = (historyContent) => {
   let id = 0;
-  const content = historyContents[index].map(item => {
+  const content = historyContent.map(item => {
     return <Paragraph key={id++} style={{fontSize: '16px', textIndent: '2em'}}>{item}</Paragraph>
   })
   return <Typography>{content}</Typography>
@@ -135,7 +136,7 @@ const HistoryContent = () => {
   ]
   const titles = ['夏商时期', '秦汉时期', '隋唐时期', '宋元时期', '明清时期', '民国时期', '新中国']
   const steps = titles.map((title, i) => {
-    return {title: title, content: createHistoryContent(historyContents, i)}
+    return {title: title, content: createHistoryContent(historyContents[i])}
   })
   const items = steps.map(item => ({
     key: item.title,
@@ -166,27 +167,52 @@ const HistoryContent = () => {
 const SceneriesContent = () => {
   const items = [
     {
-      key: 1,
+      key: 'lijiang',
       label: '漓江',
-      children: 'Content of Tab Pane 1',
+      children: <ImageFrame
+          items={["/images/banner1.jpg", "/images/banner2.jpg"]}
+          description={"部分漓江影像集"}
+          frameWidth={"70%"}
+          imageHeight={'500px'}
+          center={true}
+      />,
     },
     {
-      key: 2,
+      key: 'xiangbishan',
       label: '象鼻山',
-      children: 'Content of Tab Pane 2',
+      children: <ImageFrame
+          items={["/images/banner2.jpg", "/images/banner1.jpg"]}
+          description={"部分象鼻山影像集"}
+          frameWidth={"70%"}
+          imageHeight={'500px'}
+          center={true}
+      />,
     },
     {
-      key: 3,
+      key: 'lingqu',
       label: '灵渠',
-      children: 'Content of Tab Pane 3',
+      children: <ImageFrame
+          items={["/images/banner3.webp", "/images/banner4.webp"]}
+          description={"部分灵渠影像集"}
+          frameWidth={"70%"}
+          imageHeight={'500px'}
+          center={true}
+      />,
     },
   ];
+  const [activeKey, setActiveKey] = useState(items[0].key)
 
   return (
       <div className={styles.sceneries} id="sceneries">
         <DescriptionBox title={'著名景点'} slogan={'老眼摩挲顿增爽，诸君端是斗之南。'}/>
         <div className={styles.sceneriesDetail}>
-          <Tabs defaultActiveKey={1} items={items} size={"large"}/>
+          <Tabs
+              defaultActiveKey={activeKey}
+              items={items}
+              size={"large"}
+              onChange={v => {setActiveKey(v)}}
+              tabBarExtraContent={<Link href={'#' + activeKey}>景点详情&nbsp;&gt;</Link>}
+          />
         </div>
       </div>
   );
