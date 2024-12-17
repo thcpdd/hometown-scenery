@@ -22,7 +22,14 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="zh-Hans">
       <body>
-        <ConfigProvider locale={customLocale}>
+        <ConfigProvider
+            locale={customLocale}
+            theme={{
+              token: {
+                colorPrimary: '#34b585'
+              }
+            }}
+        >
           <Header/>
           <AntdRegistry>
             <main className="main-content">

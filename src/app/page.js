@@ -211,7 +211,7 @@ const SceneriesContent = () => {
               items={items}
               size={"large"}
               onChange={v => {setActiveKey(v)}}
-              tabBarExtraContent={<Link href={'/scenery-introduce?sceneryName=' + activeKey}>景点详情&nbsp;&gt;</Link>}
+              tabBarExtraContent={<Link href={'/scenery-introduce?sceneryName=' + activeKey} style={{color: "#34b585"}}>景点详情&nbsp;&gt;</Link>}
           />
         </div>
       </div>
