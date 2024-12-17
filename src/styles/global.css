@@ -18,6 +18,7 @@ ul, ol {
 
 a {
   text-decoration: none;
+  color: unset;
 }
 
 /* 去掉图片底部的间隔 */
@@ -26,5 +27,5 @@ img {
 }
 
 .main-content {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }

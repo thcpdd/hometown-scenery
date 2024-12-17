@@ -1,0 +1,68 @@
+.content {
+  width: 70%;
+  margin: 26px auto 0 auto;
+  display: flex;
+}
+
+/* 景点列表-开始 */
+.sceneryList {
+  width: 15%;
+  text-align: center;
+  background-color: white;
+  min-width: max-content;
+  max-height: min-content;
+}
+
+.listName {
+  font-size: 19px;
+  padding: 10px 0;
+  font-weight: bold;
+  background-color: #34b585;
+  color: white;
+  border-radius: 7px;
+}
+
+.listItem {
+}
+
+.listItem li {
+  list-style: none;
+  padding: 13px 0;
+}
+
+.listItem li a:hover {
+  color: #34b585;
+}
+
+.activate {
+  color: #34b585;
+}
+
+.activate:before {
+  content: '✨';
+}
+
+.activate:after {
+  content: '✨';
+}
+/* 景点列表-结束 */
+
+/* 景点描述-开始 */
+.sceneryDescription {
+  margin-left: 10px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 40px 10px 40px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sceneryDescriptionTitle {
+}
+
+.sceneryDescriptionContent {
+  padding: 0 30px;
+}
+/* 景点描述-结束 */

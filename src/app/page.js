@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Image, Typography, Steps, Tooltip, Tabs } from "antd";
-import Paragraph from "antd/es/typography/Paragraph";
+import Paragraph from "@/components/Paragraph";
 import styles from "@/styles/index.module.css"
 import ImageCarousel from "@/components/ImageCarousel";
 import ImageFrame from "@/components/ImageFrame";
@@ -69,12 +69,12 @@ const IntroduceContent = () => {
         <DescriptionBox title={'桂林简介'} slogan={'士气未饶军气振，文场端似战场酣。'}/>
         <div className={styles.introduceDetail}>
           <Typography>
-            <Paragraph style={{fontSize: '17px', textIndent: '2em'}}>
+            <Paragraph>
               桂林市（Guilin City），简称“桂”，古称桂州、静江、始安，广西壮族自治区辖地级市，省域副中心城市，地处中国华南，
               湘桂走廊南端，位于南岭山系西南部、桂林—阳朔岩溶盆地北端中部，处在“湘桂夹道”中，属亚热带季风气候，总面积2.78万平方千米。
               截至2023年5月，全市辖6个市辖区、8个县、2个自治县，代管1个县级市。2023年末，桂林市常住人口为495.07万人。
             </Paragraph>
-            <Paragraph style={{fontSize: '17px', textIndent: '2em'}}>
+            <Paragraph>
               “桂林”之名，始于秦代，秦始皇置桂林、象、南海三郡，桂林郡因当地盛产玉桂而成名，这是“桂林”名称的最早起源。
               桂林市是世界著名风景游览城市、万年智慧圣地、全国重要高新技术产业基地，中国老工业基地，是Ⅱ型大城市、三线城市，
               国务院批复确定的中国对外开放国际旅游城市、全国旅游创新发展先行区和国际旅游综合交通枢纽，
@@ -82,7 +82,7 @@ const IntroduceContent = () => {
               是以新型工业为主的国际旅游胜地。 是首批国家历史文化名城，秦始皇统一岭南后属桂林郡。桂林是广西重要高校集聚区，
               拥有广西师范大学、桂林电子科技大学、桂林理工大学、桂林医学院、陆军特种作战学院等16所高校。
             </Paragraph>
-            <Paragraph style={{fontSize: '17px', textIndent: '2em'}}>
+            <Paragraph>
               桂林是山水甲天下的国际旅游名城、底蕴深厚的国家历史文化名城、宜居宜养的生态山水名城。
               <Tooltip title="桂林三宝分别是：桂林三花酒、桂林辣椒酱、桂林豆腐乳">
                 <span className={styles.introduceThreeTreasures}>“万年文化桂林三宝”</span>
@@ -211,7 +211,7 @@ const SceneriesContent = () => {
               items={items}
               size={"large"}
               onChange={v => {setActiveKey(v)}}
-              tabBarExtraContent={<Link href={'#' + activeKey}>景点详情&nbsp;&gt;</Link>}
+              tabBarExtraContent={<Link href={'/scenery-introduce?sceneryName=' + activeKey}>景点详情&nbsp;&gt;</Link>}
           />
         </div>
       </div>
