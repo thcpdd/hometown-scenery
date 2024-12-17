@@ -5,6 +5,7 @@
   background-color: #34b585;
   display: flex;
   align-items: center;
+  box-shadow: 0 0 3px 3px #ededed;
 }
 
 .menu ul {

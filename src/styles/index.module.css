@@ -13,7 +13,7 @@
   font-size: 20px;
   width: 100%;
   color: white;
-  background: linear-gradient(to right, #5bd990, #42c946);
+  background-color: #34b585;
 }
 
 .descriptionBoxTitle {
@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  background: linear-gradient(to left, #5ab1ec, #3498DB);
+  background-color: #34b585;
 }
 
 .descriptionBoxContent {
