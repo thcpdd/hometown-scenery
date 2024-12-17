@@ -44,6 +44,7 @@
 /* 桂林印象——开始 */
 .impression {
   margin-bottom: 15px;
+  scroll-margin-top: 61px;
 }
 
 .impressionDetail {
@@ -90,6 +91,7 @@
 /* 桂林简介——开始 */
 .introduce {
   margin-bottom: 15px;
+  scroll-margin-top: 61px;
 }
 
 .introduceDetail {
@@ -109,6 +111,7 @@
 /* 桂林历史——开始 */
 .history {
   margin-bottom: 15px;
+  scroll-margin-top: 61px;
 }
 
 .historyDetail {
@@ -129,6 +132,7 @@
 /* 著名景点——开始 */
 .sceneries {
   margin-bottom: 15px;
+  scroll-margin-top: 61px;
 }
 
 .sceneriesDetail {

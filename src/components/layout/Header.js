@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link";
+import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import {Tooltip} from "antd";
@@ -19,6 +20,15 @@ const createMenuNode = (item, optionProps) => {
 // 导航栏组件
 const Navigator = () => {
   const pathname = usePathname()
+
+  // 路由切换时自动回到页面顶部
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, [pathname]);
+
   const menuItems = [
     {name: '首页', path: '/', id: 1},
     {name: '景点介绍', path: '/scenery-introduce', id: 2},
@@ -58,7 +68,7 @@ const Navigator = () => {
 // 头部组件
 export const Header = () => {
   return (
-      <header>
+      <header style={{position: 'sticky', top: 0, zIndex: 20}}>
         <Navigator/>
       </header>
   )

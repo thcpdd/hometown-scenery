@@ -241,7 +241,7 @@ const SceneryDescription = ({ currentSceneryName }) => {
         </div>
         <Divider/>
         <Link
-            href={'#'}
+            href={'/scenery-photos?sceneryName=' + currentSceneryName}
             style={{color: '#34b585', fontSize: '14px', float: 'right', marginBottom: '10px'}}
         >景点影像集&nbsp;&gt;
         </Link>

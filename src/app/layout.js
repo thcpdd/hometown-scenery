@@ -2,6 +2,7 @@ import { AntdRegistry } from '@ant-design/nextjs-registry';
 import zhCN from "antd/es/locale/zh_CN";
 import { ConfigProvider } from "antd";
 import BackTop from "antd/es/float-button/BackTop";
+import NextTopLoader from 'nextjs-toploader';
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import "@/styles/global.css"
@@ -25,6 +26,12 @@ const RootLayout = ({ children }) => {
           <Header/>
           <AntdRegistry>
             <main className="main-content">
+              <NextTopLoader
+                  color={"#ffd103"}
+                  showSpinner={false}
+                  initialPosition={0.2}
+                  speed={400}
+              />
               {children}
               <BackTop/>
             </main>
