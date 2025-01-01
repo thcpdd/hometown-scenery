@@ -8,13 +8,14 @@
 
 /* 发表留言-开始 */
 .title {
-
 }
+
 .publish {
   color: #34b585;
   float: right;
   margin-bottom: 5px;
 }
+
 .publish:hover {
   cursor: pointer;
 }
@@ -24,6 +25,5 @@
 .detail {
   margin-top: 15px;
   padding: 0 30px;
-  /*background-color: #6ea3ee;*/
 }
 /* 所有留言内容-结束 */
