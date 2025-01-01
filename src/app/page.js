@@ -31,32 +31,18 @@ const ImpressionContent = () => {
     {imagePath: '/images/banner4.webp', imageName: 'banner4'},
   ]
 
-  const catalog = [
-    {name: '桂林印象', href: '/#impression', id: 1},
-    {name: '桂林简介', href: '/#introduce', id: 2},
-    {name: '桂林历史', href: '/#history', id: 3},
-    {name: '著名景点', href: '/#sceneries', id: 4},
-  ]
-
-  const catalogElement = catalog.map(item => {
-    return <li key={item.id}><Link href={item.href}><div>{item.name}</div></Link></li>
-  })
-
   return (
       <div className={styles.impression} id="impression">
         <DescriptionBox title={'桂林印象'} slogan={'桂林山水甲天下，玉碧罗青意可参。'}/>
         <div className={styles.impressionDetail}>
-          <div className={styles.impressionDetailList}>
-            <ul>{catalogElement}</ul>
-          </div>
           <div className={styles.impressionDetailCarousel}>
-            <ImageCarousel height={'293px'} images={bannerImages}/>
+            <ImageCarousel height={'320px'} images={bannerImages}/>
           </div>
           <div className={styles.impressionDetailPhotosSet}>
-            <Image src="/images/banner1.jpg" alt="" width="50%" height="146px"/>
-            <Image src="/images/banner2.jpg" alt="" width="50%" height="146px"/>
-            <Image src="/images/banner3.webp" alt="" width="50%" height="147px"/>
-            <Image src="/images/banner4.webp" alt="" width="50%" height="147px"/>
+            <Image src="/images/banner1.jpg" alt="" width="50%" height="160px"/>
+            <Image src="/images/banner2.jpg" alt="" width="50%" height="160px"/>
+            <Image src="/images/banner3.webp" alt="" width="50%" height="160px"/>
+            <Image src="/images/banner4.webp" alt="" width="50%" height="160px"/>
           </div>
         </div>
       </div>

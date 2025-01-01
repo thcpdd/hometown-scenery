@@ -9,6 +9,8 @@ const ImageFrame = ({items, description, imageWidth, imageHeight, frameWidth, fr
     height: frameHeight || '100%',
     border: '#dedddd 5px solid',
     boxShadow: '0 0 3px 3px #ededed',
+    borderRadius: '10px',
+    overflow: 'hidden'
   }
   if (center) {
     styles.margin = '0 auto'

@@ -11,6 +11,8 @@
   background-color: white;
   min-width: max-content;
   max-height: min-content;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .listName {
@@ -19,7 +21,6 @@
   font-weight: bold;
   background-color: #34b585;
   color: white;
-  border-radius: 7px;
 }
 
 .listItem {

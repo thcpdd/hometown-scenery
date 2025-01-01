@@ -34,7 +34,6 @@ const Navigator = () => {
     {name: '景点介绍', path: '/scenery-introduce', id: 2},
     {name: '景点影像', path: '/scenery-photos', id: 3},
     {name: '留言板', path: '/contact', id: 4},
-    {name: '关于站点', path: '/about', id: 5},
   ]
   const menuNodes = menuItems.map(item => {
     let optionProps = {}
