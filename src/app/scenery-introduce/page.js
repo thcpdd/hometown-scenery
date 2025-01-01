@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Divider, Typography } from "antd";
@@ -249,15 +249,24 @@ const SceneryDescription = ({ currentSceneryName }) => {
   );
 }
 
-const Page = () => {
+// https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+const Main = () => {
   const params = useSearchParams()
   let currentSceneryName = params.get('sceneryName') || 'lijiang'
 
   return (
-    <div className={styles.content}>
-      <SceneryList currentSceneryName={currentSceneryName}/>
-      <SceneryDescription currentSceneryName={currentSceneryName}/>
-    </div>
+      <div className={styles.content}>
+        <SceneryList currentSceneryName={currentSceneryName}/>
+        <SceneryDescription currentSceneryName={currentSceneryName}/>
+      </div>
+  );
+}
+
+const Page = () => {
+  return (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Main/>
+      </Suspense>
   );
 }
 

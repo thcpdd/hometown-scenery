@@ -46,7 +46,7 @@ const Navigator = () => {
   return (
       <div className={styles.navigator}>
         <div className={styles.navigatorHead}>
-          <span><Image src='/images/logo.png' alt='logo.png' width='40' height='40'/></span>
+          <span><Image src='/logo.png' alt='logo.png' width='40' height='40'/></span>
           <span style={{marginLeft: '10px', fontSize: '25px', fontWeight: 'bold'}}>桂林山水甲天下</span>
         </div>
         <div className={styles.push}></div>
@@ -56,7 +56,7 @@ const Navigator = () => {
         <div style={{margin: '0 20px'}}>
           <Tooltip title="进入代码仓库">
             <Link href="https://github.com/thcpdd/hometown-scenery" target="_blank">
-              <Image src='/images/github.svg' alt='github.svg' height='30' width='30'/>
+              <Image src='/github.svg' alt='github.svg' height='30' width='30'/>
             </Link>
           </Tooltip>
         </div>

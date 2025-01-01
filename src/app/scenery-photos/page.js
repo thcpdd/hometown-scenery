@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Select } from "antd";
 import ImageFrame from "@/components/ImageFrame";
@@ -19,7 +19,8 @@ const Pictures = ({ images }) => {
   })
 }
 
-const Page = () => {
+// https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+const Main = () => {
   const params = useSearchParams()
   const paramsValue = params.get('sceneryName') || 'lijiang'
   const [defaultValue, setDefaultValue] = useState(paramsValue)
@@ -45,6 +46,14 @@ const Page = () => {
         </div>
       </div>
   );
+}
+
+const Page = () => {
+  return (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Main/>
+      </Suspense>
+  )
 }
 
 export default Page

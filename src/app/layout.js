@@ -1,7 +1,6 @@
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import zhCN from "antd/es/locale/zh_CN";
 import { ConfigProvider } from "antd";
-import BackTop from "antd/es/float-button/BackTop";
 import NextTopLoader from 'nextjs-toploader';
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -40,7 +39,6 @@ const RootLayout = ({ children }) => {
                   speed={400}
               />
               {children}
-              <BackTop/>
             </main>
           </AntdRegistry>
           <Footer/>
