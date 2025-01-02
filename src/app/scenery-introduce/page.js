@@ -42,7 +42,7 @@ const _LiJiangDescriptionContent = () => {
           漓江，珠江流域西江支流桂江上游河段的通称，属珠江流域西江水系，位于桂林市。
           传统意义上的漓江，起点为桂江源头越城岭猫儿山，现代水文定义为兴安县溶江镇灵渠口，终点为平乐三江口。
         </Paragraph>
-        <ImageFrame items={["/images/lijiang/1.png"]} description={'漓江干流走向'} frameWidth={"60%"} center={true} many={false}/>
+        <ImageFrame items={["/images/lijiang/1.png"]} description={'漓江干流走向'} frameWidth={"60%"} center={true}/>
         <Paragraph>
           漓江上游河段为大溶江，下游河段为传统名称的桂江。灵渠河口为桂江大溶江段和漓江段的分界点，
           荔浦河、恭城河口为漓江段和桂江段的分界点。漓江段流经兴安、灵川、桂林、阳朔、平乐等地，全长164公里。
@@ -64,34 +64,34 @@ const _LiJiangDescriptionContent = () => {
           往南流至司门前与黄柏江、川江汇合称大溶江，至溶江镇附近与灵河汇合，始称漓江。漓江经灵川县过桂林市在平乐县平乐镇北与恭城河汇合，
           漓江段全长164公里。平乐镇以下称桂江。河流继续南流至梧州汇入西江。
         </Paragraph>
-        <ImageFrame items={["/images/lijiang/2.png"]} description={'漓江段上段兴安县溶江镇段'} frameWidth={"60%"} center={true} many={false}/>
+        <ImageFrame items={["/images/lijiang/2.png"]} description={'漓江段上段兴安县溶江镇段'} frameWidth={"60%"} center={true}/>
         <Paragraph>
           在兴安县境，自溶江镇河口，接古运河灵渠，为漓江起点（古代水文认为：灵渠为漓江的上源），接小溶江后出境。
         </Paragraph>
-        <ImageFrame items={["/images/lijiang/3.png"]} description={'漓江灵川县三街镇段'} frameWidth={"60%"} center={true} many={false}/>
+        <ImageFrame items={["/images/lijiang/3.png"]} description={'漓江灵川县三街镇段'} frameWidth={"60%"} center={true}/>
         <Paragraph>
           在灵川县境，在小溶江村进入境。漓江境内流域面积2173.29平方公里。全长45公里，分两段：上段长33.5公里，河面平均宽度160米。
           自小溶江村起，流经峡背、岩头、三街、富丘渡、渡头、双潭、崔家圩、三岔尾；先后纳白云江、潞江、淦江、瀑布水、三百源、甘棠江诸水，
           沿下秦至大面圩流入桂林市。下段11.5公里，河面平均宽度220米，均卵石夹沙泥河底。自大圩镇上力脚村再人县境，经敢兴、大圩镇至南村，
           纳黄沙河、涧沙河、潮田河3水，南流至清水潭受古东水，出桂林市郊、下阳朔县。
         </Paragraph>
-        <ImageFrame items={["/images/lijiang/4.png"]} description={'漓江桂林市城区段'} frameWidth={"60%"} center={true} many={false}/>
+        <ImageFrame items={["/images/lijiang/4.png"]} description={'漓江桂林市城区段'} frameWidth={"60%"} center={true}/>
         <Paragraph>
           在桂林市区，漓江在灵川县秦家进入桂林市区，由北向南穿过城区，汇桃花江后至斗鸡山折向南流，过灵川大圩镇又蜿蜒向南，
           在草坪乡冠岩处入阳朔境，流经市区49.3公里。在桂林水文站（穿山乡樟木村尾）处流域面积为2762平方公里，流域平均宽度39.2公里，
           干流长105公里。流域形状为上、下游两头较窄，中间宽的长形多支流河系。大溶江至桂林为岩溶峰林平原，河床比降为0.94%，市区段河床平均比降为0.44%。
         </Paragraph>
-        <ImageFrame items={["/images/lijiang/5.png"]} description={'漓江阳朔县兴平镇段'} frameWidth={"60%"} center={true} many={false}/>
-        <ImageFrame items={["/images/lijiang/6.png"]} description={'漓江阳朔县阳朔镇段'} frameWidth={"60%"} center={true} many={false}/>
+        <ImageFrame items={["/images/lijiang/5.png"]} description={'漓江阳朔县兴平镇段'} frameWidth={"60%"} center={true}/>
+        <ImageFrame items={["/images/lijiang/6.png"]} description={'漓江阳朔县阳朔镇段'} frameWidth={"60%"} center={true}/>
         <Paragraph>
           在阳朔县境，自杨堤乡官岩村流入县境。入本县境流经杨堤、兴坪、福利、阳朔镇、城关、普益、接纳山背河、土岭河、大源河、樟桂河、双月河、
           田家河、双桥河等支流，至普益乡马草坪入平乐县境，共长69公里，占漓江干流（通常称兴安至平乐河段为漓江，全长164公里）的42%，为流经各县境最长的一段。
         </Paragraph>
-        <ImageFrame items={["/images/lijiang/7.png"]} description={'漓江段终点平乐县平乐镇段（我土生土长的地方）'} frameWidth={"60%"} center={true} many={false}/>
+        <ImageFrame items={["/images/lijiang/7.png"]} description={'漓江段终点平乐县平乐镇段（我土生土长的地方）'} frameWidth={"60%"} center={true}/>
         <Paragraph>
           在平乐县境，荔江（荔浦河、漓江、茶江（恭城河））三江在平乐镇相汇称桂江，往南流入昭平县。
         </Paragraph>
-        <ImageFrame items={["/images/lijiang/8.webp"]} description={'阳朔县兴坪镇元宝山'} frameWidth={"60%"} center={true} many={false}/>
+        <ImageFrame items={["/images/lijiang/8.webp"]} description={'阳朔县兴坪镇元宝山'} frameWidth={"60%"} center={true}/>
         <Paragraph>其中，20元的人名币背面的景色就来源于阳朔段的漓江。</Paragraph>
       </Typography>
   );
@@ -118,7 +118,7 @@ const _XiangBiShanDescriptionContent = () => {
         <Title level={3}>主要景点</Title>
         <Title level={4}>象鼻山</Title>
         <Paragraph>象鼻山，原名漓山，位于桂林市桃花江与漓江汇流之处，因其看上去犹如一只大象在用鼻子饮水，故后得名象鼻山。作为桂林旅游的标志性景点，象鼻山于1995年被定为桂林的城徽标志，也被外国游客誉为“中国符号”。</Paragraph>
-        <ImageFrame items={['images/xiangbishan/1.webp']} center={true} frameWidth={"60%"} many={false} description={'象鼻山'}/>
+        <ImageFrame items={['images/xiangbishan/1.webp']} center={true} frameWidth={"60%"} description={'象鼻山'}/>
         <Title level={4}>水月洞</Title>
         <Paragraph>
           水月洞位于象山的东端，其北依象山，东临漓江，西有桃花江，是个两面贯穿的圆洞。洞高12米，宽9.5米，长17米，像个卷篷式的大洞门，
@@ -126,7 +126,7 @@ const _XiangBiShanDescriptionContent = () => {
           水月洞内还保存着22幅唐、宋石刻，其中唐代诗人韩愈的名句：江作青罗带，山如碧玉簪，也镌刻于此。洞内文字多达3065个，
           是世界上洞壁面积最小却拥有唐、宋石刻文字最多的水洞。2015年，荣获了大世界基尼斯纪录。
         </Paragraph>
-        <ImageFrame items={['images/xiangbishan/2.jpg']} center={true} frameWidth={"60%"} many={false} description={'水月洞'}/>
+        <ImageFrame items={['images/xiangbishan/2.jpg']} center={true} frameWidth={"60%"} description={'水月洞'}/>
         <Title level={4}>普贤塔</Title>
         <Paragraph>
           象鼻山巅有一座普贤塔，远远望去，像插在象背上的剑柄，又像一只古雅的宝瓶。该塔始建于明代，为喇嘛式实心砖塔，距今已有400多年历史。
@@ -138,7 +138,7 @@ const _XiangBiShanDescriptionContent = () => {
           在象鼻山南麓云峰寺后的崖壁上，有明代“送子观音像”一龛，这也是桂林唯一有彩色的摩崖造像。观音菩萨身着华服，头戴天冠，双手抱一小孩放膝上，
           端坐于莲台上，身后有圆形火焰身光及头光。主像两侧，各立女侍一人，头梳发髻，着宽袖长袍宫装。龛外左右两侧站立两小孩，双手拱揖。
         </Paragraph>
-        <ImageFrame items={['images/xiangbishan/4.webp']} center={true} frameWidth={"60%"} many={false} description={'送子观音像'}/>
+        <ImageFrame items={['images/xiangbishan/4.webp']} center={true} frameWidth={"60%"} description={'送子观音像'}/>
         <Title level={4}>云峰寺</Title>
         <Paragraph>
           云峰寺位于象山西南麓，初建于唐代，后屡有修葺。清光绪十七年（1891年）重建，为尼姑所居住。1978年，桂林市文物管理委员会参照原建制改建这座寺院，寺内有太平天国历史文物陈列室，对外开放。
@@ -149,7 +149,7 @@ const _XiangBiShanDescriptionContent = () => {
           自北宋以来就成为官府酒坊的酒窖。因岩洞长年恒温在摄氏20度左右，且湿度保持在80—100%条件下，有利于酒的酯化。在藏酒洞里所藏的酒，
           一般有20年的时间，有的甚至30年以上，最好的酒已藏50年。
         </Paragraph>
-        <ImageFrame items={['images/xiangbishan/5.png']} center={true} frameWidth={"60%"} many={false} description={'三花酒窖'}/>
+        <ImageFrame items={['images/xiangbishan/5.png']} center={true} frameWidth={"60%"} description={'三花酒窖'}/>
         <Title level={4}>舍利塔</Title>
         <Paragraph>
           舍利塔，位于象鼻山西南面约500米处，离文昌桥南头不远的民主路万寿巷内。舍利塔原是桂林古“开元寺”的遗物，建于唐显庆四年（659年）。
@@ -177,7 +177,7 @@ const _LingQuDescriptionContent = () => {
           1988年，灵渠被中华人民共和国国务院公布为第三批全国重点文物保护单位。 2018年8月13日，
           灵渠等4个项目入选2018年（第五批）世界灌溉工程遗产名录。2021年1月，“灵渠”入选第四批国家水情教育基地名单。
         </Paragraph>
-        <ImageFrame items={['images/lingqu/1.png']} center={true} description={'灵渠主体工程'} frameWidth={'60%'} many={false}></ImageFrame>
+        <ImageFrame items={['images/lingqu/1.png']} center={true} description={'灵渠主体工程'} frameWidth={'60%'}></ImageFrame>
         <Paragraph>
           灵渠水系由北南两渠组成。北渠俗称湘江新道，全由人工开凿而成，大致与湘江故道略成平行，渠槽在田畴间，其水位高过湘江故道，湘江水在分水塘经铧嘴分流和大小天坪坝引流后，约7分水流入北渠，在高塘村与湘江故道相会，全长3.25公里，最大引流量为12立方米每秒。
         </Paragraph>
@@ -193,7 +193,7 @@ const _LingQuDescriptionContent = () => {
           宽8～15米，河床多为泥沙结构，水深0.4～1.3米；自灵山庙以下续向西流经严关乡至溶江镇老水街灵河口此段22.8公里，为灵渠干流经过整治的水道，
           渠宽15～50米，水深0.5～3米，河床为卵石和泥沙构成。
         </Paragraph>
-        <ImageFrame items={['images/lingqu/2.png']} center={true} description={'灵渠俯瞰图'} frameWidth={'60%'} many={false}></ImageFrame>
+        <ImageFrame items={['images/lingqu/2.png']} center={true} description={'灵渠俯瞰图'} frameWidth={'60%'}></ImageFrame>
       </Typography>
   );
 }

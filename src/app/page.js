@@ -25,10 +25,13 @@ const DescriptionBox = ({title, slogan}) => {
 
 const ImpressionContent = () => {
   const bannerImages = [
-    {imagePath: '/images/banner1.jpg', imageName: 'banner1'},
-    {imagePath: '/images/banner2.jpg', imageName: 'banner2'},
-    {imagePath: '/images/banner3.webp', imageName: 'banner3'},
-    {imagePath: '/images/banner4.webp', imageName: 'banner4'},
+    {imagePath: '/images/lijiang/8.webp', imageName: 'banner1'},
+    {imagePath: '/images/lijiang/10.jpg', imageName: 'banner2'},
+    {imagePath: '/images/lijiang/19.jpg', imageName: 'banner3'},
+    {imagePath: '/images/lijiang/20.jpg', imageName: 'banner4'},
+    {imagePath: '/images/lijiang/17.jpg', imageName: 'banner5'},
+    {imagePath: '/images/lingqu/15.jpg', imageName: 'banner6'},
+    {imagePath: '/images/xiangbishan/12.jpeg', imageName: 'banner7'},
   ]
 
   return (
@@ -39,10 +42,10 @@ const ImpressionContent = () => {
             <ImageCarousel height={'320px'} images={bannerImages}/>
           </div>
           <div className={styles.impressionDetailPhotosSet}>
-            <Image src="/images/banner1.jpg" alt="" width="50%" height="160px"/>
-            <Image src="/images/banner2.jpg" alt="" width="50%" height="160px"/>
-            <Image src="/images/banner3.webp" alt="" width="50%" height="160px"/>
-            <Image src="/images/banner4.webp" alt="" width="50%" height="160px"/>
+            <Image src="/images/lijiang/26.jpg" alt="" width="50%" height="160px"/>
+            <Image src="/images/lijiang/30.jpg" alt="" width="50%" height="160px"/>
+            <Image src="/images/xiangbishan/6.jpg" alt="" width="50%" height="160px"/>
+            <Image src="/images/lingqu/16.jpg" alt="" width="50%" height="160px"/>
           </div>
         </div>
       </div>
@@ -156,7 +159,7 @@ const SceneriesContent = () => {
       key: 'lijiang',
       label: '漓江',
       children: <ImageFrame
-          items={["/images/banner1.jpg", "/images/banner2.jpg"]}
+          items={["/images/lijiang/28.jpg", "/images/lijiang/29.jpg"]}
           description={"部分漓江影像集"}
           frameWidth={"70%"}
           imageHeight={'500px'}
@@ -167,7 +170,7 @@ const SceneriesContent = () => {
       key: 'xiangbishan',
       label: '象鼻山',
       children: <ImageFrame
-          items={["/images/banner2.jpg", "/images/banner1.jpg"]}
+          items={["/images/xiangbishan/12.jpeg", "/images/xiangbishan/11.jpg"]}
           description={"部分象鼻山影像集"}
           frameWidth={"70%"}
           imageHeight={'500px'}
@@ -178,7 +181,7 @@ const SceneriesContent = () => {
       key: 'lingqu',
       label: '灵渠',
       children: <ImageFrame
-          items={["/images/banner3.webp", "/images/banner4.webp"]}
+          items={["/images/lingqu/19.jpg", "/images/lingqu/15.jpg"]}
           description={"部分灵渠影像集"}
           frameWidth={"70%"}
           imageHeight={'500px'}

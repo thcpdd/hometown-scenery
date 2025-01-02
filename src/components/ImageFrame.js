@@ -2,21 +2,24 @@ import { Image } from "antd";
 import PreviewGroup from "antd/es/image/PreviewGroup"
 
 // 相框组件
-const ImageFrame = ({items, description, imageWidth, imageHeight, frameWidth, frameHeight, center, many=true}) => {
+const ImageFrame = ({items, description, imageWidth, imageHeight, frameWidth, frameHeight, center, margin}) => {
   let styles = {
     textAlign: "center",
     width: frameWidth || '100%',
     height: frameHeight || '100%',
-    border: '#dedddd 5px solid',
-    boxShadow: '0 0 3px 3px #ededed',
+    border: '#dedddd 3px solid',
+    boxShadow: '0 0 2px 2px #ededed',
     borderRadius: '10px',
     overflow: 'hidden'
+  }
+  if (margin) {
+    styles.margin = margin
   }
   if (center) {
     styles.margin = '0 auto'
   }
   let Group
-  if (many) {
+  if (items.length > 1) {
     Group = (
         <PreviewGroup items={items}>
           <Image src={items[0]} width={imageWidth || '100%'} height={imageHeight || '100%'}/>

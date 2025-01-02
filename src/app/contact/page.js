@@ -30,13 +30,13 @@ const ContactContentItem = ({ username, phone, datetime, title, tag, content }) 
 const ContactContent = () => {
   // 所有的留言内容实际情况应来自于后端
   const contents = [
-    {username: 'Rainbow', phone: '0287', datetime: '2025年1月1日 10:37', title: '象鼻山太好堪啦！', tag: '象鼻山', content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容'},
-    {username: '游客1', phone: '1234', datetime: '2024年12月31日 10:38', title: '漓江，推荐', tag: '漓江', content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容'},
-    {username: '游客2', phone: '2345', datetime: '2024年12月30日 09:11', title: '桂林推荐景点', tag: '灵渠', content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容'},
-    {username: '游客3', phone: '3456', datetime: '2024年12月30日 08:56', title: '象鼻山留言', tag: '象鼻山', content: '内容内容内容内容内容内容内'},
-    {username: '游客4', phone: '4567', datetime: '2024年12月27日 18:37', title: '灵渠景点介绍', tag: '灵渠', content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容'},
-    {username: '游客5', phone: '5678', datetime: '2024年12月16日 10:25', title: '漓江景区心得', tag: '漓江', content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容'},
-    {username: '游客6', phone: '6789', datetime: '2024年12月13日 19:32', title: '欢迎来到桂林景点象鼻山', tag: '象鼻山', content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容'},
+    {username: 'Rainbow', phone: '0287', datetime: '2025年1月1日 10:37', title: '象鼻山太好堪啦！', tag: '象鼻山', content: '象鼻山的壮观景色让人流连忘返，自然奇观令人叹为观止。'},
+    {username: '游客1', phone: '1234', datetime: '2024年12月31日 10:38', title: '漓江，推荐', tag: '漓江', content: '漓江的山水如画，乘船游览仿佛置身仙境，绝对值得一游。'},
+    {username: '游客2', phone: '2345', datetime: '2024年12月30日 09:11', title: '桂林推荐景点', tag: '灵渠', content: '灵渠不仅历史悠久，而且风光旖旎，是了解古代水利工程的好去处。'},
+    {username: '游客3', phone: '3456', datetime: '2024年12月30日 08:56', title: '象鼻山留言', tag: '象鼻山', content: '象鼻山的独特造型和背后的故事给旅程增添了许多趣味和文化气息。'},
+    {username: '游客4', phone: '4567', datetime: '2024年12月27日 18:37', title: '灵渠景点介绍', tag: '灵渠', content: '灵渠作为古代重要的交通命脉，至今仍保留着历史的痕迹与美丽的风景。'},
+    {username: '游客5', phone: '5678', datetime: '2024年12月16日 10:25', title: '游玩漓江景区心得', tag: '漓江', content: '在漓江边漫步或泛舟，感受大自然的魅力，心灵得到了前所未有的放松。'},
+    {username: '游客6', phone: '6789', datetime: '2024年12月13日 19:32', title: '欢迎来到桂林景点象鼻山', tag: '象鼻山', content: '欢迎各位朋友到访象鼻山，体验这独一无二的自然景观，定会不虚此行。'},
   ]
   const [current, setCurrent] = useState(1)
   const pageSize = 5

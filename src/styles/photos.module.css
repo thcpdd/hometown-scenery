@@ -2,13 +2,12 @@
   width: 65%;
   margin: 26px auto 0 auto;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .title {
   background-color: #34b585;
   color: white;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
   padding: 13px 0;
   font-size: 21px;
   font-weight: bold;
@@ -20,12 +19,9 @@
 .detail {
   padding: 35px;
   background-color: white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-around;
+  justify-content: space-around;
 }
 
 .detail > * {
